@@ -13,13 +13,8 @@ MonoBehaviour:
   m_Name: Rock
   m_EditorClassIdentifier: 
   m_Angles:
-  - m_Start: -178
-    m_End: -177
-    m_Order: 0
-    m_Sprites:
-    - {fileID: 21300000, guid: c38bae658bef1334cbb6f9313a686720, type: 3}
   - m_Start: -177
-    m_End: 182
+    m_End: 183
     m_Order: 0
     m_Sprites:
     - {fileID: 21300000, guid: 71ee2351482c9d94893dd4c1ee6269d1, type: 3}
