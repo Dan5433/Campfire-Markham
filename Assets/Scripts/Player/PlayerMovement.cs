@@ -54,4 +54,9 @@ public class PlayerMovement : MonoBehaviour
         leftLeg.motor = leftLegMotor;
         rightLeg.motor = rightLegMotor;
     }
+
+    private void OnDestroy()
+    {
+        playerInput.Disable();
+    }
 }
