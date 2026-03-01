@@ -735,7 +735,12 @@ MonoBehaviour:
   maxDegreesPerSecond: 270
   maxSpeedChange: 0.5
   speedFalloff: 2
-  sprintMultiplier: 1.5
+  sprintMultiplier: 2
+  staminaBar: {fileID: 0}
+  stamina: 100
+  maxStamina: 100
+  staminaDecreaseDelta: 4
+  staminaRegenDelta: 2
 --- !u!1 &6876813256957160754
 GameObject:
   m_ObjectHideFlags: 0
