@@ -8453,6 +8453,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8750876034663673386, guid: d4439d7ea2b097e4ebaf6e493f6ef308, type: 3}
   m_PrefabInstance: {fileID: 1022360258}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1022360260 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2550220092245966219, guid: d4439d7ea2b097e4ebaf6e493f6ef308, type: 3}
+  m_PrefabInstance: {fileID: 1022360258}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acd43bd023a64974c8f984e0e1bd6599, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerBodyParts
 --- !u!1 &1041438821
 GameObject:
   m_ObjectHideFlags: 0
@@ -9232,6 +9243,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 7684828027911521712, guid: 291f86e2e77745b4b9d8660e46192fd3, type: 3}
+      propertyPath: playerBodyParts
+      value: 
+      objectReference: {fileID: 1022360260}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
