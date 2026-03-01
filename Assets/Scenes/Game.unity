@@ -757,10 +757,10 @@ HingeJoint2D:
   m_Motor:
     m_MotorSpeed: 0
     m_MaximumMotorForce: 1
-  m_UseLimits: 0
+  m_UseLimits: 1
   m_AngleLimits:
-    m_LowerAngle: -45
-    m_UpperAngle: 45
+    m_LowerAngle: -150
+    m_UpperAngle: 60
 --- !u!70 &1039389258
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1220,10 +1220,10 @@ HingeJoint2D:
   m_Motor:
     m_MotorSpeed: 0
     m_MaximumMotorForce: 1
-  m_UseLimits: 0
+  m_UseLimits: 1
   m_AngleLimits:
-    m_LowerAngle: -45
-    m_UpperAngle: 45
+    m_LowerAngle: -150
+    m_UpperAngle: 60
 --- !u!70 &1688410478
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
