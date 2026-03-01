@@ -2824,6 +2824,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2550220092245966219, guid: d4439d7ea2b097e4ebaf6e493f6ef308, type: 3}
+      propertyPath: cinemachineCamera
+      value: 
+      objectReference: {fileID: 1253418972}
     - target: {fileID: 4076804684535648034, guid: d4439d7ea2b097e4ebaf6e493f6ef308, type: 3}
       propertyPath: staminaBar
       value: 
