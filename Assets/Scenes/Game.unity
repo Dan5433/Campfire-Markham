@@ -256,8 +256,9 @@ MonoBehaviour:
   rightArm: {fileID: 1561903134}
   leftLeg: {fileID: 1688410477}
   rightLeg: {fileID: 1039389257}
-  maxDegreesPerSecond: 180
-  maxSpeedChange: 0.25
+  maxDegreesPerSecond: 270
+  maxSpeedChange: 0.5
+  speedFalloff: 2
   sprintMultiplier: 1.5
 --- !u!1 &42962717
 GameObject:

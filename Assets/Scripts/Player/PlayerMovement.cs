@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
     static PlayerInput playerInput;
 
     [SerializeField] HingeJoint2D leftArm, rightArm, leftLeg, rightLeg;
-    [SerializeField] float maxDegreesPerSecond, maxSpeedChange, sprintMultiplier;
+    [SerializeField] float maxDegreesPerSecond, maxSpeedChange, speedFalloff, sprintMultiplier;
 
     private void Awake()
     {
@@ -27,7 +27,7 @@ public class PlayerMovement : MonoBehaviour
         JointMotor2D rightArmMotor = rightArm.motor;
 
         float newArmSpeed = Mathf.MoveTowards(currentArmSpeed, maxDegreesPerSecond * movementInput.y,
-            movementInput.y != 0 ? maxSpeedChange : maxDegreesPerSecond);
+            movementInput.y != 0 ? maxSpeedChange : speedFalloff);
 
         leftArmMotor.motorSpeed = newArmSpeed;
         rightArmMotor.motorSpeed = newArmSpeed;
@@ -39,7 +39,7 @@ public class PlayerMovement : MonoBehaviour
         JointMotor2D rightLegMotor = rightLeg.motor;
 
         float newLegSpeed = Mathf.MoveTowards(currentLegSpeed, maxDegreesPerSecond * movementInput.x,
-            movementInput.x != 0 ? maxSpeedChange : maxDegreesPerSecond);
+            movementInput.x != 0 ? maxSpeedChange : speedFalloff);
 
         leftLegMotor.motorSpeed = newLegSpeed;
         rightLegMotor.motorSpeed = newLegSpeed;
