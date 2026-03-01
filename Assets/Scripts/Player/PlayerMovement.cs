@@ -5,70 +5,21 @@ public class PlayerMovement : MonoBehaviour
 {
     static PlayerInput playerInput;
 
+    [SerializeField] HingeJoint2D leftArm, rightArm, leftLeg, rightLeg;
+    [SerializeField] float maxDegreesPerSecond, maxSpeedChange, sprintMultiplier;
+
     private void Awake()
     {
         playerInput = new();
 
-        playerInput.Player.Crouch.performed += Crouch;
-        playerInput.Player.Crouch.canceled += Uncrouch;
-
-        playerInput.Player.Crawl.performed += Crawl;
-        playerInput.Player.Crawl.canceled += Uncrawl;
-
-        playerInput.Player.HoldBreath.performed += HoldBreath;
-        playerInput.Player.HoldBreath.canceled += StopHoldingBreath;
-
-        playerInput.Player.LeftArm.performed += UseLeftArm;
-        playerInput.Player.RightArm.performed += UseRightArm;
-        playerInput.Player.LeftLeg.performed += UseLeftLeg;
-        playerInput.Player.RightLeg.performed += UseRightLeg;
-
         playerInput.Enable();
     }
 
-    void UseLeftArm(UnityEngine.InputSystem.InputAction.CallbackContext obj)
+    private void Update()
     {
-        Debug.Log("Left Arm");
-    }
+        Vector2 movementInput = playerInput.Player.Move.ReadValue<Vector2>();
 
-    void UseRightArm(UnityEngine.InputSystem.InputAction.CallbackContext obj)
-    {
-        Debug.Log("Right Arm");
-    }
-
-    void UseLeftLeg(UnityEngine.InputSystem.InputAction.CallbackContext obj)
-    {
-        Debug.Log("Left Leg");
-    }
-
-    void UseRightLeg(UnityEngine.InputSystem.InputAction.CallbackContext obj)
-    {
-        Debug.Log("Right Leg");
-    }
-
-    void Crouch(UnityEngine.InputSystem.InputAction.CallbackContext obj)
-    {
-        Debug.Log("Crouch");
-    }
-    void Uncrouch(UnityEngine.InputSystem.InputAction.CallbackContext obj)
-    {
-        Debug.Log("Uncrouch");
-    }
-
-    void Crawl(UnityEngine.InputSystem.InputAction.CallbackContext obj)
-    {
-        Debug.Log("Crawl");
-    }
-    void Uncrawl(UnityEngine.InputSystem.InputAction.CallbackContext obj)
-    {
-        Debug.Log("Uncrawl");
-    }
-    void HoldBreath(UnityEngine.InputSystem.InputAction.CallbackContext obj)
-    {
-        Debug.Log("Holding Breath...");
-    }
-    void StopHoldingBreath(UnityEngine.InputSystem.InputAction.CallbackContext obj)
-    {
-        Debug.Log("Breathing again");
+        float currentArmSpeed = (leftArm.motor.motorSpeed + rightArm.motor.motorSpeed) / 2;
+        float currentLegSpeed = (leftLeg.motor.motorSpeed + rightLeg.motor.motorSpeed) / 2;
     }
 }
