@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 9169661}
   - component: {fileID: 9169662}
   - component: {fileID: 9169663}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -226,7 +226,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_AngularDamping: 0
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -238,7 +238,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!1 &42962717
 GameObject:
   m_ObjectHideFlags: 0
@@ -252,7 +252,7 @@ GameObject:
   - component: {fileID: 42962722}
   - component: {fileID: 42962724}
   - component: {fileID: 42962723}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Left Arm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -392,19 +392,19 @@ HingeJoint2D:
   m_ConnectedRigidBody: {fileID: 9169663}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
-  m_BreakAction: 3
-  m_AutoConfigureConnectedAnchor: 1
+  m_BreakAction: 0
+  m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: 0.4}
   m_ConnectedAnchor: {x: 0, y: 0.40000004}
   m_UseConnectedAnchor: 1
-  m_UseMotor: 0
+  m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 0
     m_MaximumMotorForce: 10000
   m_UseLimits: 0
   m_AngleLimits:
-    m_LowerAngle: 0
-    m_UpperAngle: 359
+    m_LowerAngle: -45
+    m_UpperAngle: 45
 --- !u!50 &42962724
 Rigidbody2D:
   serializedVersion: 5
@@ -495,7 +495,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -782,19 +782,19 @@ HingeJoint2D:
   m_ConnectedRigidBody: {fileID: 9169663}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
-  m_BreakAction: 3
-  m_AutoConfigureConnectedAnchor: 1
+  m_BreakAction: 0
+  m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: 0.5}
   m_ConnectedAnchor: {x: 0, y: -0.43999997}
   m_UseConnectedAnchor: 1
-  m_UseMotor: 0
+  m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 0
     m_MaximumMotorForce: 10000
   m_UseLimits: 0
   m_AngleLimits:
-    m_LowerAngle: 0
-    m_UpperAngle: 359
+    m_LowerAngle: -45
+    m_UpperAngle: 45
 --- !u!1 &1253418969
 GameObject:
   m_ObjectHideFlags: 0
@@ -806,7 +806,6 @@ GameObject:
   - component: {fileID: 1253418973}
   - component: {fileID: 1253418972}
   - component: {fileID: 1253418971}
-  - component: {fileID: 1253418970}
   m_Layer: 0
   m_Name: CinemachineCamera
   m_TagString: Untagged
@@ -814,35 +813,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1253418970
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1253418969}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f38bda98361e1de48a4ca2bd86ea3c17, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineRotationComposer
-  Composition:
-    ScreenPosition: {x: 0, y: 0}
-    DeadZone:
-      Enabled: 0
-      Size: {x: 0.2, y: 0.2}
-    HardLimits:
-      Enabled: 0
-      Size: {x: 0.8, y: 0.8}
-      Offset: {x: 0, y: 0}
-  CenterOnActivate: 1
-  TargetOffset: {x: 0, y: 0, z: 0}
-  Damping: {x: 0.5, y: 0.5}
-  Lookahead:
-    Enabled: 0
-    Time: 0
-    Smoothing: 0
-    IgnoreY: 0
 --- !u!114 &1253418971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -887,7 +857,7 @@ MonoBehaviour:
     CustomLookAtTarget: 0
   Lens:
     FieldOfView: 60
-    OrthographicSize: 5
+    OrthographicSize: 10
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -933,7 +903,7 @@ GameObject:
   - component: {fileID: 1561903130}
   - component: {fileID: 1561903133}
   - component: {fileID: 1561903134}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Right Arm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1100,19 +1070,19 @@ HingeJoint2D:
   m_ConnectedRigidBody: {fileID: 9169663}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
-  m_BreakAction: 3
-  m_AutoConfigureConnectedAnchor: 1
+  m_BreakAction: 0
+  m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: 0.4}
   m_ConnectedAnchor: {x: 0, y: 0.40000004}
   m_UseConnectedAnchor: 1
-  m_UseMotor: 0
+  m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 0
     m_MaximumMotorForce: 10000
   m_UseLimits: 0
   m_AngleLimits:
-    m_LowerAngle: 0
-    m_UpperAngle: 359
+    m_LowerAngle: -45
+    m_UpperAngle: 45
 --- !u!1 &1688410471
 GameObject:
   m_ObjectHideFlags: 0
@@ -1126,7 +1096,7 @@ GameObject:
   - component: {fileID: 1688410473}
   - component: {fileID: 1688410476}
   - component: {fileID: 1688410477}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Left Leg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1293,19 +1263,19 @@ HingeJoint2D:
   m_ConnectedRigidBody: {fileID: 9169663}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
-  m_BreakAction: 3
-  m_AutoConfigureConnectedAnchor: 1
+  m_BreakAction: 0
+  m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: 0.5}
   m_ConnectedAnchor: {x: 0, y: -0.43999997}
   m_UseConnectedAnchor: 1
-  m_UseMotor: 0
+  m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 0
     m_MaximumMotorForce: 10000
   m_UseLimits: 0
   m_AngleLimits:
-    m_LowerAngle: 0
-    m_UpperAngle: 359
+    m_LowerAngle: -45
+    m_UpperAngle: 45
 --- !u!1 &1688869008
 GameObject:
   m_ObjectHideFlags: 0
@@ -1315,7 +1285,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1688869009}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Limbs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1473,8 +1443,8 @@ Transform:
   m_GameObject: {fileID: 2025388754}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.29, y: -5.61, z: 0}
-  m_LocalScale: {x: 33.561657, y: 4.99112, z: 1}
+  m_LocalPosition: {x: 250.9, y: -5.61, z: 0}
+  m_LocalScale: {x: 519.72, y: 4.99112, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
