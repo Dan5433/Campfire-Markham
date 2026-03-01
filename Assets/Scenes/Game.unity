@@ -977,7 +977,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: TImer timehere
+  m_text: TImer time:time
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1a485c01537a5654597f69bc04555877, type: 2}
   m_sharedMaterial: {fileID: -743400920559785788, guid: 1a485c01537a5654597f69bc04555877, type: 2}
