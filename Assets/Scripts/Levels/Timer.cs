@@ -23,15 +23,18 @@ public class Timer : MonoBehaviour
 
     void Update()
     {
-        if (timer <= 0 && !didRunOutOfTime)
+        if (didRunOutOfTime)
+            return;
+
+        if (timer > 0)
+            timer -= Time.deltaTime;
+        else
         {
             didRunOutOfTime = true;
             timer = 0;
             timerText.color = Color.firebrick;
             playerBodyParts.ExplodeLimbs();
         }
-        else
-            timer -= Time.deltaTime;
 
         timerText.text = $"{timer:F3} s";
     }
