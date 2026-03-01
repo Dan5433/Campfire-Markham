@@ -2397,6 +2397,17 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!114 &1586477152 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2550220092245966219, guid: d4439d7ea2b097e4ebaf6e493f6ef308, type: 3}
+  m_PrefabInstance: {fileID: 2728118363968954757}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acd43bd023a64974c8f984e0e1bd6599, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerBodyParts
 --- !u!1 &1604665969
 GameObject:
   m_ObjectHideFlags: 0
@@ -3030,6 +3041,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Level Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 7684828027911521712, guid: 291f86e2e77745b4b9d8660e46192fd3, type: 3}
+      propertyPath: playerBodyParts
+      value: 
+      objectReference: {fileID: 1586477152}
     - target: {fileID: 8622225561836988161, guid: 291f86e2e77745b4b9d8660e46192fd3, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
