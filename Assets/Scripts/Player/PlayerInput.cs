@@ -165,6 +165,15 @@ namespace Input
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Crawl"",
+                    ""type"": ""Button"",
+                    ""id"": ""c3c775d2-6266-4a31-8b7b-d7500cf20970"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -351,7 +360,7 @@ namespace Input
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Keyboard&Mouse"",
-                    ""action"": ""Crouch"",
+                    ""action"": ""Crawl"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -1013,6 +1022,7 @@ namespace Input
             m_Player_LeftLeg = m_Player.FindAction("Left Leg", throwIfNotFound: true);
             m_Player_RightLeg = m_Player.FindAction("Right Leg", throwIfNotFound: true);
             m_Player_HoldBreath = m_Player.FindAction("Hold Breath", throwIfNotFound: true);
+            m_Player_Crawl = m_Player.FindAction("Crawl", throwIfNotFound: true);
             // UI
             m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
             m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -1114,6 +1124,7 @@ namespace Input
         private readonly InputAction m_Player_LeftLeg;
         private readonly InputAction m_Player_RightLeg;
         private readonly InputAction m_Player_HoldBreath;
+        private readonly InputAction m_Player_Crawl;
         /// <summary>
         /// Provides access to input actions defined in input action map "Player".
         /// </summary>
@@ -1157,6 +1168,10 @@ namespace Input
             /// Provides access to the underlying input action "Player/HoldBreath".
             /// </summary>
             public InputAction @HoldBreath => m_Wrapper.m_Player_HoldBreath;
+            /// <summary>
+            /// Provides access to the underlying input action "Player/Crawl".
+            /// </summary>
+            public InputAction @Crawl => m_Wrapper.m_Player_Crawl;
             /// <summary>
             /// Provides access to the underlying input action map instance.
             /// </summary>
@@ -1207,6 +1222,9 @@ namespace Input
                 @HoldBreath.started += instance.OnHoldBreath;
                 @HoldBreath.performed += instance.OnHoldBreath;
                 @HoldBreath.canceled += instance.OnHoldBreath;
+                @Crawl.started += instance.OnCrawl;
+                @Crawl.performed += instance.OnCrawl;
+                @Crawl.canceled += instance.OnCrawl;
             }
 
             /// <summary>
@@ -1242,6 +1260,9 @@ namespace Input
                 @HoldBreath.started -= instance.OnHoldBreath;
                 @HoldBreath.performed -= instance.OnHoldBreath;
                 @HoldBreath.canceled -= instance.OnHoldBreath;
+                @Crawl.started -= instance.OnCrawl;
+                @Crawl.performed -= instance.OnCrawl;
+                @Crawl.canceled -= instance.OnCrawl;
             }
 
             /// <summary>
@@ -1598,6 +1619,13 @@ namespace Input
             /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
             void OnHoldBreath(InputAction.CallbackContext context);
+            /// <summary>
+            /// Method invoked when associated input action "Crawl" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+            /// </summary>
+            /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+            /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+            /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+            void OnCrawl(InputAction.CallbackContext context);
         }
         /// <summary>
         /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "UI" which allows adding and removing callbacks.
