@@ -21,7 +21,6 @@ public class PlayerMovement : MonoBehaviour
         Debug.Log(movementInput);
 
         float currentArmSpeed = (leftArm.motor.motorSpeed + rightArm.motor.motorSpeed) / 2;
-        float currentLegSpeed = (leftLeg.motor.motorSpeed + rightLeg.motor.motorSpeed) / 2;
 
         JointMotor2D leftArmMotor = leftArm.motor;
         JointMotor2D rightArmMotor = rightArm.motor;
@@ -30,12 +29,16 @@ public class PlayerMovement : MonoBehaviour
             movementInput.y != 0 ? maxSpeedChange : speedFalloff);
 
         leftArmMotor.motorSpeed = newArmSpeed;
-        leftArmMotor.maxMotorTorque = Mathf.Abs(newArmSpeed);
+        leftArmMotor.maxMotorTorque = movementInput.y == 0 ? 0 : maxDegreesPerSecond;
         rightArmMotor.motorSpeed = newArmSpeed;
-        rightArmMotor.maxMotorTorque = Mathf.Abs(newArmSpeed);
+        rightArmMotor.maxMotorTorque = movementInput.y == 0 ? 0 : maxDegreesPerSecond;
 
         leftArm.motor = leftArmMotor;
         rightArm.motor = rightArmMotor;
+
+
+
+        float currentLegSpeed = (leftLeg.motor.motorSpeed + rightLeg.motor.motorSpeed) / 2;
 
         JointMotor2D leftLegMotor = leftLeg.motor;
         JointMotor2D rightLegMotor = rightLeg.motor;
@@ -44,9 +47,9 @@ public class PlayerMovement : MonoBehaviour
             movementInput.x != 0 ? maxSpeedChange : speedFalloff);
 
         leftLegMotor.motorSpeed = newLegSpeed;
-        leftLegMotor.maxMotorTorque = Mathf.Abs(newLegSpeed);
+        leftLegMotor.maxMotorTorque = movementInput.x == 0 ? 0 : maxDegreesPerSecond;
         rightLegMotor.motorSpeed = newLegSpeed;
-        rightLegMotor.maxMotorTorque = Mathf.Abs(newLegSpeed);
+        rightLegMotor.maxMotorTorque = movementInput.x == 0 ? 0 : maxDegreesPerSecond;
 
         leftLeg.motor = leftLegMotor;
         rightLeg.motor = rightLegMotor;
