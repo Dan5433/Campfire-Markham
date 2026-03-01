@@ -7232,13 +7232,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3325336501746703932, guid: d4439d7ea2b097e4ebaf6e493f6ef308, type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: -0.0000000037252903
+      objectReference: {fileID: 0}
+    - target: {fileID: 4076804684535648034, guid: d4439d7ea2b097e4ebaf6e493f6ef308, type: 3}
+      propertyPath: staminaBar
+      value: 
+      objectReference: {fileID: 1390881605}
     - target: {fileID: 4638198719866566069, guid: d4439d7ea2b097e4ebaf6e493f6ef308, type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: 1.0000001
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5863105830585563564, guid: d4439d7ea2b097e4ebaf6e493f6ef308, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 7808284688446030269, guid: d4439d7ea2b097e4ebaf6e493f6ef308, type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: -0.0000000037252903
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7895,7 +7907,6 @@ SpriteShapeRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_ShapeTexture: {fileID: 2800000, guid: a368e9f83ccb07446944b128cc7defa6, type: 3}
   m_Sprites:
-  - {fileID: 21300000, guid: c38bae658bef1334cbb6f9313a686720, type: 3}
   - {fileID: 21300000, guid: 71ee2351482c9d94893dd4c1ee6269d1, type: 3}
   - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
   - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
@@ -8111,15 +8122,74 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: -100
       objectReference: {fileID: 0}
+    - target: {fileID: 5283331768428939019, guid: 291f86e2e77745b4b9d8660e46192fd3, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5283331768428939019, guid: 291f86e2e77745b4b9d8660e46192fd3, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5283331768428939019, guid: 291f86e2e77745b4b9d8660e46192fd3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5283331768428939019, guid: 291f86e2e77745b4b9d8660e46192fd3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6653267060069602792, guid: 291f86e2e77745b4b9d8660e46192fd3, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6653267060069602792, guid: 291f86e2e77745b4b9d8660e46192fd3, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6653267060069602792, guid: 291f86e2e77745b4b9d8660e46192fd3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6653267060069602792, guid: 291f86e2e77745b4b9d8660e46192fd3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6724118487242784988, guid: 291f86e2e77745b4b9d8660e46192fd3, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6724118487242784988, guid: 291f86e2e77745b4b9d8660e46192fd3, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7398815673964936307, guid: 291f86e2e77745b4b9d8660e46192fd3, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 8622225561836988161, guid: 291f86e2e77745b4b9d8660e46192fd3, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8622225561836988161, guid: 291f86e2e77745b4b9d8660e46192fd3, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 291f86e2e77745b4b9d8660e46192fd3, type: 3}
+--- !u!114 &1390881605 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9055876106162775933, guid: 291f86e2e77745b4b9d8660e46192fd3, type: 3}
+  m_PrefabInstance: {fileID: 1390881604}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Slider
 --- !u!1 &1899865064
 GameObject:
   m_ObjectHideFlags: 0
@@ -8742,7 +8812,6 @@ SpriteShapeRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_ShapeTexture: {fileID: 2800000, guid: a368e9f83ccb07446944b128cc7defa6, type: 3}
   m_Sprites:
-  - {fileID: 21300000, guid: c38bae658bef1334cbb6f9313a686720, type: 3}
   - {fileID: 21300000, guid: 71ee2351482c9d94893dd4c1ee6269d1, type: 3}
   - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
   - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
