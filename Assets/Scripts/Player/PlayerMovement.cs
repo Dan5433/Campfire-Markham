@@ -30,7 +30,9 @@ public class PlayerMovement : MonoBehaviour
             movementInput.y != 0 ? maxSpeedChange : speedFalloff);
 
         leftArmMotor.motorSpeed = newArmSpeed;
+        leftArmMotor.maxMotorTorque = Mathf.Abs(newArmSpeed);
         rightArmMotor.motorSpeed = newArmSpeed;
+        rightArmMotor.maxMotorTorque = Mathf.Abs(newArmSpeed);
 
         leftArm.motor = leftArmMotor;
         rightArm.motor = rightArmMotor;
@@ -42,7 +44,9 @@ public class PlayerMovement : MonoBehaviour
             movementInput.x != 0 ? maxSpeedChange : speedFalloff);
 
         leftLegMotor.motorSpeed = newLegSpeed;
+        leftLegMotor.maxMotorTorque = Mathf.Abs(newLegSpeed);
         rightLegMotor.motorSpeed = newLegSpeed;
+        rightLegMotor.maxMotorTorque = Mathf.Abs(newLegSpeed);
 
         leftLeg.motor = leftLegMotor;
         rightLeg.motor = rightLegMotor;
