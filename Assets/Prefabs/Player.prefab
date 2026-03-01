@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8750876034663673386}
   - component: {fileID: 3878656283070682212}
-  - component: {fileID: 1556593510164260651}
   - component: {fileID: 5365567457495764722}
   - component: {fileID: 8555871112696107825}
   m_Layer: 3
@@ -94,26 +93,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &1556593510164260651
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3482778844199751896}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f1531ac0020d544da05addacaafcf00, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  leftArm: {fileID: 4858680624713669957}
-  rightArm: {fileID: 7089718772640565574}
-  leftLeg: {fileID: 3325336501746703932}
-  rightLeg: {fileID: 7808284688446030269}
-  maxDegreesPerSecond: 270
-  maxSpeedChange: 0.5
-  speedFalloff: 2
-  sprintMultiplier: 1.5
 --- !u!50 &5365567457495764722
 Rigidbody2D:
   serializedVersion: 5
@@ -710,6 +689,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2072586174581120753}
+  - component: {fileID: 4076804684535648034}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -736,6 +716,31 @@ Transform:
   - {fileID: 4219494086987686901}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4076804684535648034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5863105830585563564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f1531ac0020d544da05addacaafcf00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
+  leftArm: {fileID: 4858680624713669957}
+  rightArm: {fileID: 7089718772640565574}
+  leftLeg: {fileID: 3325336501746703932}
+  rightLeg: {fileID: 7808284688446030269}
+  maxDegreesPerSecond: 270
+  maxSpeedChange: 0.5
+  speedFalloff: 2
+  sprintMultiplier: 2
+  staminaBar: {fileID: 0}
+  stamina: 100
+  maxStamina: 100
+  staminaDecreaseDelta: 4
+  staminaRegenDelta: 2
 --- !u!1 &6876813256957160754
 GameObject:
   m_ObjectHideFlags: 0
