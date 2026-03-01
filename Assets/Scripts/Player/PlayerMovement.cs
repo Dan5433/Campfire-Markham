@@ -18,8 +18,33 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         Vector2 movementInput = playerInput.Player.Move.ReadValue<Vector2>();
+        Debug.Log(movementInput);
 
         float currentArmSpeed = (leftArm.motor.motorSpeed + rightArm.motor.motorSpeed) / 2;
         float currentLegSpeed = (leftLeg.motor.motorSpeed + rightLeg.motor.motorSpeed) / 2;
+
+        JointMotor2D leftArmMotor = leftArm.motor;
+        JointMotor2D rightArmMotor = rightArm.motor;
+
+        float newArmSpeed = Mathf.MoveTowards(currentArmSpeed, maxDegreesPerSecond * movementInput.y,
+            movementInput.y != 0 ? maxSpeedChange : maxDegreesPerSecond);
+
+        leftArmMotor.motorSpeed = newArmSpeed;
+        rightArmMotor.motorSpeed = newArmSpeed;
+
+        leftArm.motor = leftArmMotor;
+        rightArm.motor = rightArmMotor;
+
+        JointMotor2D leftLegMotor = leftLeg.motor;
+        JointMotor2D rightLegMotor = rightLeg.motor;
+
+        float newLegSpeed = Mathf.MoveTowards(currentLegSpeed, maxDegreesPerSecond * movementInput.x,
+            movementInput.x != 0 ? maxSpeedChange : maxDegreesPerSecond);
+
+        leftLegMotor.motorSpeed = newLegSpeed;
+        rightLegMotor.motorSpeed = newLegSpeed;
+
+        leftLeg.motor = leftLegMotor;
+        rightLeg.motor = rightLegMotor;
     }
 }

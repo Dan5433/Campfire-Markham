@@ -239,7 +239,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 0
 --- !u!114 &9169664
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -256,7 +256,9 @@ MonoBehaviour:
   rightArm: {fileID: 1561903134}
   leftLeg: {fileID: 1688410477}
   rightLeg: {fileID: 1039389257}
-  maxDegreesPerSecond: 90
+  maxDegreesPerSecond: 180
+  maxSpeedChange: 0.25
+  sprintMultiplier: 1.5
 --- !u!1 &42962717
 GameObject:
   m_ObjectHideFlags: 0
