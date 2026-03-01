@@ -670,7 +670,7 @@ HingeJoint2D:
   m_BreakAction: 0
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: -0.5}
-  m_ConnectedAnchor: {x: 0, y: 0.52500004}
+  m_ConnectedAnchor: {x: 0, y: 0.525}
   m_UseConnectedAnchor: 1
   m_UseMotor: 0
   m_Motor:
@@ -690,6 +690,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2072586174581120753}
   - component: {fileID: 4076804684535648034}
+  - component: {fileID: 2550220092245966219}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -741,6 +742,30 @@ MonoBehaviour:
   maxStamina: 100
   staminaDecreaseDelta: 4
   staminaRegenDelta: 2
+--- !u!114 &2550220092245966219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5863105830585563564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acd43bd023a64974c8f984e0e1bd6599, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerBodyParts
+  xExplodeForceRange: {x: -100, y: 100}
+  yExplodeForceRange: {x: -100, y: 100}
+  titleReturnDelay: 5
+  cinemachineCamera: {fileID: 0}
+  bodyParts:
+  - {fileID: 5365567457495764722}
+  - {fileID: 6953352596744042410}
+  - {fileID: 2927838216609957876}
+  - {fileID: 7798558101538226773}
+  - {fileID: 3466731603825321510}
+  - {fileID: 3271728724008331136}
+  - {fileID: 1352307496112397807}
 --- !u!1 &6876813256957160754
 GameObject:
   m_ObjectHideFlags: 0
@@ -880,7 +905,7 @@ HingeJoint2D:
   m_BreakAction: 0
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: -0.125, y: 0.5}
-  m_ConnectedAnchor: {x: 0, y: -0.5}
+  m_ConnectedAnchor: {x: -0.0000000037252903, y: -0.5}
   m_UseConnectedAnchor: 1
   m_UseMotor: 1
   m_Motor:
@@ -1498,7 +1523,7 @@ HingeJoint2D:
   m_BreakAction: 0
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: -0.125, y: 0.5}
-  m_ConnectedAnchor: {x: 0, y: -0.5}
+  m_ConnectedAnchor: {x: -0.0000000037252903, y: -0.5}
   m_UseConnectedAnchor: 1
   m_UseMotor: 1
   m_Motor:
