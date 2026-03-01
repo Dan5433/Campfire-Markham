@@ -606,8 +606,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -260, y: -150}
-  m_SizeDelta: {x: 341.3354, y: 50}
+  m_AnchoredPosition: {x: -180, y: 150}
+  m_SizeDelta: {x: 500, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &758523896
 MonoBehaviour:
@@ -629,7 +629,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Stamina IG
+  m_text: TImer timehere
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1a485c01537a5654597f69bc04555877, type: 2}
   m_sharedMaterial: {fileID: -743400920559785788, guid: 1a485c01537a5654597f69bc04555877, type: 2}
