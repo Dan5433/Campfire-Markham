@@ -5,70 +5,53 @@ public class PlayerMovement : MonoBehaviour
 {
     static PlayerInput playerInput;
 
+    [SerializeField] HingeJoint2D leftArm, rightArm, leftLeg, rightLeg;
+    [SerializeField] float maxDegreesPerSecond, maxSpeedChange, speedFalloff, sprintMultiplier;
+
     private void Awake()
     {
         playerInput = new();
 
-        playerInput.Player.Crouch.performed += Crouch;
-        playerInput.Player.Crouch.canceled += Uncrouch;
-
-        playerInput.Player.Crawl.performed += Crawl;
-        playerInput.Player.Crawl.canceled += Uncrawl;
-
-        playerInput.Player.HoldBreath.performed += HoldBreath;
-        playerInput.Player.HoldBreath.canceled += StopHoldingBreath;
-
-        playerInput.Player.LeftArm.performed += UseLeftArm;
-        playerInput.Player.RightArm.performed += UseRightArm;
-        playerInput.Player.LeftLeg.performed += UseLeftLeg;
-        playerInput.Player.RightLeg.performed += UseRightLeg;
-
         playerInput.Enable();
     }
 
-    void UseLeftArm(UnityEngine.InputSystem.InputAction.CallbackContext obj)
+    private void Update()
     {
-        Debug.Log("Left Arm");
-    }
+        Vector2 movementInput = playerInput.Player.Move.ReadValue<Vector2>();
+        Debug.Log(movementInput);
 
-    void UseRightArm(UnityEngine.InputSystem.InputAction.CallbackContext obj)
-    {
-        Debug.Log("Right Arm");
-    }
+        float currentArmSpeed = (leftArm.motor.motorSpeed + rightArm.motor.motorSpeed) / 2;
 
-    void UseLeftLeg(UnityEngine.InputSystem.InputAction.CallbackContext obj)
-    {
-        Debug.Log("Left Leg");
-    }
+        JointMotor2D leftArmMotor = leftArm.motor;
+        JointMotor2D rightArmMotor = rightArm.motor;
 
-    void UseRightLeg(UnityEngine.InputSystem.InputAction.CallbackContext obj)
-    {
-        Debug.Log("Right Leg");
-    }
+        float newArmSpeed = Mathf.MoveTowards(currentArmSpeed, maxDegreesPerSecond * movementInput.y,
+            movementInput.y != 0 ? maxSpeedChange : speedFalloff);
 
-    void Crouch(UnityEngine.InputSystem.InputAction.CallbackContext obj)
-    {
-        Debug.Log("Crouch");
-    }
-    void Uncrouch(UnityEngine.InputSystem.InputAction.CallbackContext obj)
-    {
-        Debug.Log("Uncrouch");
-    }
+        leftArmMotor.motorSpeed = newArmSpeed;
+        leftArmMotor.maxMotorTorque = movementInput.y == 0 ? 0 : maxDegreesPerSecond;
+        rightArmMotor.motorSpeed = newArmSpeed;
+        rightArmMotor.maxMotorTorque = movementInput.y == 0 ? 0 : maxDegreesPerSecond;
 
-    void Crawl(UnityEngine.InputSystem.InputAction.CallbackContext obj)
-    {
-        Debug.Log("Crawl");
-    }
-    void Uncrawl(UnityEngine.InputSystem.InputAction.CallbackContext obj)
-    {
-        Debug.Log("Uncrawl");
-    }
-    void HoldBreath(UnityEngine.InputSystem.InputAction.CallbackContext obj)
-    {
-        Debug.Log("Holding Breath...");
-    }
-    void StopHoldingBreath(UnityEngine.InputSystem.InputAction.CallbackContext obj)
-    {
-        Debug.Log("Breathing again");
+        leftArm.motor = leftArmMotor;
+        rightArm.motor = rightArmMotor;
+
+
+
+        float currentLegSpeed = (leftLeg.motor.motorSpeed + rightLeg.motor.motorSpeed) / 2;
+
+        JointMotor2D leftLegMotor = leftLeg.motor;
+        JointMotor2D rightLegMotor = rightLeg.motor;
+
+        float newLegSpeed = Mathf.MoveTowards(currentLegSpeed, maxDegreesPerSecond * movementInput.x,
+            movementInput.x != 0 ? maxSpeedChange : speedFalloff);
+
+        leftLegMotor.motorSpeed = newLegSpeed;
+        leftLegMotor.maxMotorTorque = movementInput.x == 0 ? 0 : maxDegreesPerSecond;
+        rightLegMotor.motorSpeed = newLegSpeed;
+        rightLegMotor.maxMotorTorque = movementInput.x == 0 ? 0 : maxDegreesPerSecond;
+
+        leftLeg.motor = leftLegMotor;
+        rightLeg.motor = rightLegMotor;
     }
 }

@@ -111,69 +111,6 @@ namespace Input
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
-                },
-                {
-                    ""name"": ""Crouch"",
-                    ""type"": ""Button"",
-                    ""id"": ""27c5f898-bc57-4ee1-8800-db469aca5fe3"",
-                    ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Left Arm"",
-                    ""type"": ""Button"",
-                    ""id"": ""713824b6-8e32-4389-b3ce-6e5eea270aa1"",
-                    ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Right Arm"",
-                    ""type"": ""Button"",
-                    ""id"": ""7c163564-ac9b-472d-a469-446f6c7f43d0"",
-                    ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Left Leg"",
-                    ""type"": ""Button"",
-                    ""id"": ""bf71f44a-c246-4891-8bba-f07cdd61412b"",
-                    ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Right Leg"",
-                    ""type"": ""Button"",
-                    ""id"": ""afb542e8-d36d-4153-bbf9-1a81f645bbd2"",
-                    ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Hold Breath"",
-                    ""type"": ""Button"",
-                    ""id"": ""4e5a801e-96b0-43ee-b531-60f4a35eacdd"",
-                    ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Crawl"",
-                    ""type"": ""Button"",
-                    ""id"": ""c3c775d2-6266-4a31-8b7b-d7500cf20970"",
-                    ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -189,7 +126,7 @@ namespace Input
                     ""isPartOfComposite"": false
                 },
                 {
-                    ""name"": ""WASD"",
+                    ""name"": ""QEAD"",
                     ""id"": ""00ca640b-d935-4593-8157-c05846ea39b3"",
                     ""path"": ""Dpad"",
                     ""interactions"": """",
@@ -202,7 +139,7 @@ namespace Input
                 {
                     ""name"": ""up"",
                     ""id"": ""e2062cb9-1b15-46a2-838c-2f8d72a0bdd9"",
-                    ""path"": ""<Keyboard>/w"",
+                    ""path"": ""<Keyboard>/e"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Keyboard&Mouse"",
@@ -224,7 +161,7 @@ namespace Input
                 {
                     ""name"": ""down"",
                     ""id"": ""320bffee-a40b-4347-ac70-c210eb8bc73a"",
-                    ""path"": ""<Keyboard>/s"",
+                    ""path"": ""<Keyboard>/q"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Keyboard&Mouse"",
@@ -339,94 +276,6 @@ namespace Input
                     ""processors"": """",
                     ""groups"": ""Joystick"",
                     ""action"": ""Look"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""4f4649ac-64a8-4a73-af11-b3faef356a4d"",
-                    ""path"": ""<Gamepad>/buttonEast"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Gamepad"",
-                    ""action"": ""Crouch"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""1adc1c06-77a5-4df2-bbd6-36971fa3ceac"",
-                    ""path"": ""<Keyboard>/ctrl"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": "";Keyboard&Mouse"",
-                    ""action"": ""Crawl"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""0e879266-69ff-485a-96f5-f5ae46fd76f0"",
-                    ""path"": ""<Keyboard>/shift"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": "";Keyboard&Mouse"",
-                    ""action"": ""Crouch"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""df38715d-d5d8-4292-ad2e-397ee766bbaf"",
-                    ""path"": ""<Keyboard>/q"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": "";Keyboard&Mouse"",
-                    ""action"": ""Left Arm"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""a2e34003-e694-4413-bf27-654f724c3c01"",
-                    ""path"": ""<Keyboard>/e"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": "";Keyboard&Mouse"",
-                    ""action"": ""Right Arm"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""e1371303-2850-4aab-946b-707c0e13b0cd"",
-                    ""path"": ""<Keyboard>/a"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": "";Keyboard&Mouse"",
-                    ""action"": ""Left Leg"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""07b05613-f1d7-410f-a0b8-dfad82fde101"",
-                    ""path"": ""<Keyboard>/d"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": "";Keyboard&Mouse"",
-                    ""action"": ""Right Leg"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""f4af281d-3953-41f3-8d94-889af50823a7"",
-                    ""path"": ""<Keyboard>/space"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": "";Keyboard&Mouse"",
-                    ""action"": ""Hold Breath"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -1016,13 +865,6 @@ namespace Input
             m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
             m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
             m_Player_Look = m_Player.FindAction("Look", throwIfNotFound: true);
-            m_Player_Crouch = m_Player.FindAction("Crouch", throwIfNotFound: true);
-            m_Player_LeftArm = m_Player.FindAction("Left Arm", throwIfNotFound: true);
-            m_Player_RightArm = m_Player.FindAction("Right Arm", throwIfNotFound: true);
-            m_Player_LeftLeg = m_Player.FindAction("Left Leg", throwIfNotFound: true);
-            m_Player_RightLeg = m_Player.FindAction("Right Leg", throwIfNotFound: true);
-            m_Player_HoldBreath = m_Player.FindAction("Hold Breath", throwIfNotFound: true);
-            m_Player_Crawl = m_Player.FindAction("Crawl", throwIfNotFound: true);
             // UI
             m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
             m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -1118,13 +960,6 @@ namespace Input
         private List<IPlayerActions> m_PlayerActionsCallbackInterfaces = new List<IPlayerActions>();
         private readonly InputAction m_Player_Move;
         private readonly InputAction m_Player_Look;
-        private readonly InputAction m_Player_Crouch;
-        private readonly InputAction m_Player_LeftArm;
-        private readonly InputAction m_Player_RightArm;
-        private readonly InputAction m_Player_LeftLeg;
-        private readonly InputAction m_Player_RightLeg;
-        private readonly InputAction m_Player_HoldBreath;
-        private readonly InputAction m_Player_Crawl;
         /// <summary>
         /// Provides access to input actions defined in input action map "Player".
         /// </summary>
@@ -1144,34 +979,6 @@ namespace Input
             /// Provides access to the underlying input action "Player/Look".
             /// </summary>
             public InputAction @Look => m_Wrapper.m_Player_Look;
-            /// <summary>
-            /// Provides access to the underlying input action "Player/Crouch".
-            /// </summary>
-            public InputAction @Crouch => m_Wrapper.m_Player_Crouch;
-            /// <summary>
-            /// Provides access to the underlying input action "Player/LeftArm".
-            /// </summary>
-            public InputAction @LeftArm => m_Wrapper.m_Player_LeftArm;
-            /// <summary>
-            /// Provides access to the underlying input action "Player/RightArm".
-            /// </summary>
-            public InputAction @RightArm => m_Wrapper.m_Player_RightArm;
-            /// <summary>
-            /// Provides access to the underlying input action "Player/LeftLeg".
-            /// </summary>
-            public InputAction @LeftLeg => m_Wrapper.m_Player_LeftLeg;
-            /// <summary>
-            /// Provides access to the underlying input action "Player/RightLeg".
-            /// </summary>
-            public InputAction @RightLeg => m_Wrapper.m_Player_RightLeg;
-            /// <summary>
-            /// Provides access to the underlying input action "Player/HoldBreath".
-            /// </summary>
-            public InputAction @HoldBreath => m_Wrapper.m_Player_HoldBreath;
-            /// <summary>
-            /// Provides access to the underlying input action "Player/Crawl".
-            /// </summary>
-            public InputAction @Crawl => m_Wrapper.m_Player_Crawl;
             /// <summary>
             /// Provides access to the underlying input action map instance.
             /// </summary>
@@ -1204,27 +1011,6 @@ namespace Input
                 @Look.started += instance.OnLook;
                 @Look.performed += instance.OnLook;
                 @Look.canceled += instance.OnLook;
-                @Crouch.started += instance.OnCrouch;
-                @Crouch.performed += instance.OnCrouch;
-                @Crouch.canceled += instance.OnCrouch;
-                @LeftArm.started += instance.OnLeftArm;
-                @LeftArm.performed += instance.OnLeftArm;
-                @LeftArm.canceled += instance.OnLeftArm;
-                @RightArm.started += instance.OnRightArm;
-                @RightArm.performed += instance.OnRightArm;
-                @RightArm.canceled += instance.OnRightArm;
-                @LeftLeg.started += instance.OnLeftLeg;
-                @LeftLeg.performed += instance.OnLeftLeg;
-                @LeftLeg.canceled += instance.OnLeftLeg;
-                @RightLeg.started += instance.OnRightLeg;
-                @RightLeg.performed += instance.OnRightLeg;
-                @RightLeg.canceled += instance.OnRightLeg;
-                @HoldBreath.started += instance.OnHoldBreath;
-                @HoldBreath.performed += instance.OnHoldBreath;
-                @HoldBreath.canceled += instance.OnHoldBreath;
-                @Crawl.started += instance.OnCrawl;
-                @Crawl.performed += instance.OnCrawl;
-                @Crawl.canceled += instance.OnCrawl;
             }
 
             /// <summary>
@@ -1242,27 +1028,6 @@ namespace Input
                 @Look.started -= instance.OnLook;
                 @Look.performed -= instance.OnLook;
                 @Look.canceled -= instance.OnLook;
-                @Crouch.started -= instance.OnCrouch;
-                @Crouch.performed -= instance.OnCrouch;
-                @Crouch.canceled -= instance.OnCrouch;
-                @LeftArm.started -= instance.OnLeftArm;
-                @LeftArm.performed -= instance.OnLeftArm;
-                @LeftArm.canceled -= instance.OnLeftArm;
-                @RightArm.started -= instance.OnRightArm;
-                @RightArm.performed -= instance.OnRightArm;
-                @RightArm.canceled -= instance.OnRightArm;
-                @LeftLeg.started -= instance.OnLeftLeg;
-                @LeftLeg.performed -= instance.OnLeftLeg;
-                @LeftLeg.canceled -= instance.OnLeftLeg;
-                @RightLeg.started -= instance.OnRightLeg;
-                @RightLeg.performed -= instance.OnRightLeg;
-                @RightLeg.canceled -= instance.OnRightLeg;
-                @HoldBreath.started -= instance.OnHoldBreath;
-                @HoldBreath.performed -= instance.OnHoldBreath;
-                @HoldBreath.canceled -= instance.OnHoldBreath;
-                @Crawl.started -= instance.OnCrawl;
-                @Crawl.performed -= instance.OnCrawl;
-                @Crawl.canceled -= instance.OnCrawl;
             }
 
             /// <summary>
@@ -1577,55 +1342,6 @@ namespace Input
             /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
             void OnLook(InputAction.CallbackContext context);
-            /// <summary>
-            /// Method invoked when associated input action "Crouch" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
-            /// </summary>
-            /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
-            /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
-            /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-            void OnCrouch(InputAction.CallbackContext context);
-            /// <summary>
-            /// Method invoked when associated input action "Left Arm" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
-            /// </summary>
-            /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
-            /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
-            /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-            void OnLeftArm(InputAction.CallbackContext context);
-            /// <summary>
-            /// Method invoked when associated input action "Right Arm" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
-            /// </summary>
-            /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
-            /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
-            /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-            void OnRightArm(InputAction.CallbackContext context);
-            /// <summary>
-            /// Method invoked when associated input action "Left Leg" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
-            /// </summary>
-            /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
-            /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
-            /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-            void OnLeftLeg(InputAction.CallbackContext context);
-            /// <summary>
-            /// Method invoked when associated input action "Right Leg" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
-            /// </summary>
-            /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
-            /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
-            /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-            void OnRightLeg(InputAction.CallbackContext context);
-            /// <summary>
-            /// Method invoked when associated input action "Hold Breath" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
-            /// </summary>
-            /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
-            /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
-            /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-            void OnHoldBreath(InputAction.CallbackContext context);
-            /// <summary>
-            /// Method invoked when associated input action "Crawl" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
-            /// </summary>
-            /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
-            /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
-            /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-            void OnCrawl(InputAction.CallbackContext context);
         }
         /// <summary>
         /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "UI" which allows adding and removing callbacks.
