@@ -1558,6 +1558,7 @@ GameObject:
   m_Component:
   - component: {fileID: 758523895}
   - component: {fileID: 758523897}
+  - component: {fileID: 758523898}
   - component: {fileID: 758523896}
   m_Layer: 5
   m_Name: Timer
@@ -1685,6 +1686,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 758523894}
   m_CullTransparentMesh: 1
+--- !u!114 &758523898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758523894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa488c5f2f5284b41b6e00f95a7ee85a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Timer
+  startTimer: 300
+  timerText: {fileID: 758523896}
 --- !u!1 &836491459
 GameObject:
   m_ObjectHideFlags: 0
