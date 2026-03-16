@@ -36,7 +36,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 25, y: -25}
-  m_SizeDelta: {x: 300, y: 100}
+  m_SizeDelta: {x: 350, y: 100}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &3964105191148190663
 CanvasRenderer:
@@ -152,6 +152,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Timer
   startTimer: 300
   timerText: {fileID: 830842415080168482}
+  playerBodyParts: {fileID: 0}
 --- !u!1 &1065721852225272023
 GameObject:
   m_ObjectHideFlags: 0
